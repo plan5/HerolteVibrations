@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
+import android.widget.Toast;
 
 import java.io.DataOutputStream;
 import java.io.File;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             p = Runtime.getRuntime().exec("su");
 
             //get vibration intensity from seekBar
-            SeekBar seekBar = (SeekBar) findViewById(R.id.seekBar);
+            SeekBar seekBar = findViewById(R.id.seekBar);
             String vibration_intensity = String.valueOf(seekBar.getProgress());
 
             // Attempt to write a file to a root-only
@@ -48,20 +49,16 @@ public class MainActivity extends AppCompatActivity {
             try {
                 p.waitFor();
                 if (p.exitValue() != 255) {
-                    // TODO Code to run on success
-                    //toastMessage("root");
+                    Toast.makeText (getApplicationContext(), "su is available", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    // TODO Code to run on unsuccessful
-                    //toastMessage("not root");
+                    Toast.makeText (getApplicationContext(), "su could not run", Toast.LENGTH_SHORT).show();
                 }
             } catch (InterruptedException e) {
-                // TODO Code to run in interrupted exception
-                //toastMessage("not root");
+                Toast.makeText (getApplicationContext(), "su could not run: Interrupted", Toast.LENGTH_SHORT).show();
             }
         } catch (IOException e) {
-            // TODO Code to run in input/output exception
-            //toastMessage("not root");
+            Toast.makeText (getApplicationContext(), "su could not run: IOError", Toast.LENGTH_SHORT).show();
         }
 
 
