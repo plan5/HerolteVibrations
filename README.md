@@ -1,5 +1,5 @@
 # HerolteVibrations
-Workaround App that sets the vibration intensity on lineageOS herolte devices (Samsung Galaxy S7) - requires root acces.
+Workaround App that sets the vibration intensity on lineageOS 14.1 herolte devices (Samsung Galaxy S7) - **requires root access**.
 
 LineageOS currently provides not vibration intensity setting for herolte devices. This App uses root access to directly write a custom value.
 
