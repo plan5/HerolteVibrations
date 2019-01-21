@@ -3,5 +3,5 @@
     <string name="enter_intensity_value">5000</string>
     <string name="set_intensity_button">Set Vibration Intensity</string>
     <string name="seek_intensity">8000</string>
-    <string name="welcomeMessage">Welcome to Herolte Vibrations\nThis App was put together to show that Vibration settings are in fact available in LineageOS herolte, even though the setting cannot be reached through the settings menu.\nSet the slider and push the button!\n\nRoot is required for this app to work.\nThe setting resets to default after reboot.\nSource Code at https://github.com/panuh/HerolteVibrations</string>
+    <string name="welcomeMessage">Welcome to Herolte Vibrations\nThis App was put together to show that Vibration settings are in fact available in LineageOS herolte, even though the setting cannot be reached through the settings menu.\nSet the slider and push the button!\n\nRoot is required for this app to work.\nThe setting resets to default after reboot.\nSource Code at https://github.com/plan5/HerolteVibrations</string>
 </resources>
